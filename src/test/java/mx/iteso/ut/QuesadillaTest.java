@@ -24,7 +24,6 @@ public class QuesadillaTest
 
    }
    @Test 
-   //Pruebas Unitarias
    public void quesadillaPerfecta(){
        when(mockedQueso.isMelted()).thenReturn(true);
        when(mockedTortilla.isToasted()).thenReturn(true);
@@ -75,8 +74,6 @@ public class QuesadillaTest
       
    }
    @Test 
-   
-   //Pruebas Unitarias
    public void quesadillaDoblePerfecta(){
        when(mockedQueso.isMelted()).thenReturn(true);
        when(mockedTortilla.isToasted()).thenReturn(true);
@@ -92,7 +89,7 @@ public class QuesadillaTest
        verify(mockedTortilla2,times(1)).toast(true);
        verify(mockedQueso,times(1)).melt(true);
    }
-   
+   @Test
    public void quesadillaDobleGood(){
        when(mockedQueso.isMelted()).thenReturn(true);
        when(mockedTortilla.isToasted()).thenReturn(false);
@@ -108,7 +105,7 @@ public class QuesadillaTest
        verify(mockedTortilla2,times(1)).toast(true);
        verify(mockedQueso,times(1)).melt(true);
    }
-   
+   @Test
    public void quesadillaDobleBad(){
        when(mockedQueso.isMelted()).thenReturn(false);
        when(mockedTortilla.isToasted()).thenReturn(false);
@@ -124,7 +121,7 @@ public class QuesadillaTest
        verify(mockedTortilla2,times(1)).toast(true);
        verify(mockedQueso,never()).melt(true);
    }
-   
+   @Test
    public void quesadillaDobleAwful(){
        when(mockedQueso.isMelted()).thenReturn(true);
        when(mockedTortilla.isToasted()).thenReturn(false);
@@ -140,7 +137,7 @@ public class QuesadillaTest
        verify(mockedTortilla2,never()).toast(true);
        verify(mockedQueso,times(1)).melt(true);
    }
-   
+   @Test
    public void quesadillaDobleTerrible(){
        when(mockedQueso.isMelted()).thenReturn(false);
        when(mockedTortilla.isToasted()).thenReturn(true);
@@ -156,7 +153,7 @@ public class QuesadillaTest
        verify(mockedTortilla2,times(1)).toast(true);
        verify(mockedQueso,never()).melt(true);
    }
-   
+   @Test
    public void quesadillaDobleNohayGas(){
        when(mockedQueso.isMelted()).thenReturn(false);
        when(mockedTortilla.isToasted()).thenReturn(false);
