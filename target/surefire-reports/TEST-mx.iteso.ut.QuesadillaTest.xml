@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="mx.iteso.ut.QuesadillaTest" time="0.259" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="mx.iteso.ut.QuesadillaTest" time="0.337" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
@@ -65,8 +65,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaTerrible" time="0.25"/>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaBuena" time="0.001"/>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaPerfecta" time="0.004"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaPerfectaDouble" time="0.303"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaTerribleDoble" time="0.007"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaTerrible" time="0.004"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaBuena" time="0.004"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaBuenaDouble" time="0.006"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="noHayGasDoble" time="0.004"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaPerfecta" time="0.005"/>
   <testcase classname="mx.iteso.ut.QuesadillaTest" name="noHayGas" time="0.004"/>
 </testsuite>
