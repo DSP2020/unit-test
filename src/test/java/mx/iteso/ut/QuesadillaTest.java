@@ -22,7 +22,8 @@ public class QuesadillaTest
 
 
    }
-   @Test
+   @Test 
+   //Pruebas Unitarias
    public void quesadillaPerfecta(){
        when(mockedQueso.isMelted()).thenReturn(true);
        when(mockedTortilla.isToasted()).thenReturn(true);
@@ -48,10 +49,28 @@ public class QuesadillaTest
    }
    @Test
    public void quesadillaTerrible(){
-       fail("Please implement corresponding test");
+       when(mockedQueso.isMelted()).thenReturn(false);
+       when(mockedTortilla.isToasted()).thenReturn(true);
+       when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
+       when(mockedTortilla.getToastTemperature()).thenReturn(10);
+       when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);
+       when(mockedQueso.getMeltingTemperature()).thenReturn(20);
+       assertEquals("Terrible quesadiilla",quesadilla.prepareSingle());
+       verify(mockedTortilla,never()).toast(true);
+       verify(mockedQueso,times(1)).melt(true);
+
    }
    @Test
    public void noHayGas(){
-      fail("Please implement corresponding test");
+	   when(mockedQueso.isMelted()).thenReturn(false);
+       when(mockedTortilla.isToasted()).thenReturn(false);
+       when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
+       when(mockedTortilla.getToastTemperature()).thenReturn(20);
+       when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);
+       when(mockedQueso.getMeltingTemperature()).thenReturn(20);
+       assertEquals("You ran out of gas",quesadilla.prepareSingle());
+       verify(mockedTortilla,never()).toast(true);
+       verify(mockedQueso,never()).melt(true);
+      
    }
 }
