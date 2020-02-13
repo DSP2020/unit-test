@@ -9,7 +9,7 @@ public class Quesadilla
     private Queso queso;
     private Tortilla tortilla;
     private int heatLevel;
-    private Tortilla torti2;
+    private Tortilla tortilla2;
 
     public String prepareSingle(){
 
@@ -57,13 +57,13 @@ public class Quesadilla
              return "Good quesadilla";
         // tortilla 1 no tostada, tortilla 2 tostada, queso no derretido
     	 if(!getQueso().isMelted() && !getTortilla().isToasted() && getTortilla2().isToasted())
-             return "Bad Quesadilla";
+             return "Bad quesadilla";
         // tortilla 1 no tostada, tortilla 2 no tostada, queso derretido
     	 if(getQueso().isMelted() && !getTortilla().isToasted() && !getTortilla2().isToasted())
-             return "Awful Quesadilla";
+             return "Awful quesadilla";
         // tortilla 1 tostada, tortilla 2 tostada, queso no derretido
     	 if(!getQueso().isMelted() && getTortilla().isToasted() && getTortilla2().isToasted())
-             return "Terrible Quesadilla";
+             return "Terrible quesadilla";
     	 // tortilla 1 no tostada, tortilla 2 no tostada, queso no derretido
     	 else 
              return "You ran out of gas";
@@ -78,11 +78,11 @@ public class Quesadilla
     }
     
     public Tortilla getTortilla2() {
-        return torti2;
+        return tortilla2;
     }
 
     public void setTortilla2(Tortilla tortilla) {
-        this.torti2 = tortilla;
+        this.tortilla2 = tortilla;
     }
 
 
