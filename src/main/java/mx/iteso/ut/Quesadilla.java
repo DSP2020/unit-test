@@ -12,14 +12,23 @@ public class Quesadilla
 
     public String prepareSingle(){
 
+     int counter = 0;
 
      while(getQueso().getCurrentTemperature()< getQueso().getMeltingTemperature() && getTortilla().getCurrentTemperature()< getTortilla().getToastTemperature()){
          getTortilla().setCurrentTemperature(getTortilla().getCurrentTemperature() + getHeatLevel());
          getQueso().setCurrentTemperature(getQueso().getCurrentTemperature() + getHeatLevel());
+
          if (getTortilla().getCurrentTemperature() >= getTortilla().getToastTemperature())
              getTortilla().toast(true);
          if (getQueso().getCurrentTemperature() >= getQueso().getMeltingTemperature())
              getQueso().melt(true);
+
+         counter = counter + 1;
+         System.out.println(counter);
+        
+         if(counter > 10)
+            break;
+
      }
 
      if(getQueso().isMelted() && getTortilla().isToasted())
