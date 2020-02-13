@@ -8,6 +8,7 @@ public class Quesadilla
 {
     private Queso queso;
     private Tortilla tortilla;
+    private Tortilla tortilla2;
     private int heatLevel;
 
     public String prepareSingle(){
@@ -34,12 +35,27 @@ public class Quesadilla
     }
 
     public String prepareDouble(){
+        //duda
+        while(getQueso().getCurrentTemperature()< getQueso().getMeltingTemperature() && getTortilla().getCurrentTemperature()< getTortilla().getToastTemperature()){
+            getTortilla().setCurrentTemperature(getTortilla().getCurrentTemperature() + getHeatLevel());
+            getQueso().setCurrentTemperature(getQueso().getCurrentTemperature() + getHeatLevel());
+            if (getTortilla().getCurrentTemperature() >= getTortilla().getToastTemperature())
+                getTortilla().toast(true);
+            if (getQueso().getCurrentTemperature() >= getQueso().getMeltingTemperature())
+                getQueso().melt(true);
+        }
         // tortilla 1 tostada, tortilla 2 tostada, queso derretido
+        if(getTortilla().isToasted() && getTortilla2().isToasted() && getQueso().isMelted()) return "";
         // tortilla 1 no tostada, tortilla 2 tostada, queso derretido
+        if(!getTortilla().isToasted() && getTortilla2().isToasted() &&getQueso().isMelted()) return "";
         // tortilla 1 no tostada, tortilla 2 tostada, queso no derretido
+        if(!getTortilla().isToasted() && getTortilla2().isToasted() && getQueso().isMelted()) return "";
         // tortilla 1 no tostada, tortilla 2 no tostada, queso no derretido
+        if(!getTortilla().isToasted() && !getTortilla2().isToasted() && getQueso().isMelted()) return "";
         // tortilla 1 no tostada, tortilla 2 no tostada, queso derretido
+        if(!getTortilla().isToasted() && !getTortilla().isToasted() && getQueso().isMelted()) return "";
         // tortilla 1 tostada, tortilla 2 tostada, queso no derretido
+        if(getTortilla().isToasted() && getTortilla2().isToasted() && !getQueso().isMelted()) return "";
 
         return "";
     }
@@ -55,6 +71,10 @@ public class Quesadilla
 
     public Tortilla getTortilla() {
         return tortilla;
+    }
+
+    public Tortilla getTortilla2() {
+        return  tortilla2;
     }
 
     public void setTortilla(Tortilla tortilla) {
