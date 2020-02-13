@@ -8,6 +8,7 @@ public class Quesadilla
 {
     private Queso queso;
     private Tortilla tortilla;
+    private Tortilla tortilla2;
     private int heatLevel;
 
     public String prepareSingle(){
@@ -35,13 +36,20 @@ public class Quesadilla
 
     public String prepareDouble(){
         // tortilla 1 tostada, tortilla 2 tostada, queso derretido
+        if(getTortilla().isToasted() && getTortilla2().isToasted() && getQueso().isMelted()) return "caso1";
         // tortilla 1 no tostada, tortilla 2 tostada, queso derretido
+        if(!getTortilla().isToasted() && getTortilla2().isToasted() && getQueso().isMelted()) return "caso2";
         // tortilla 1 no tostada, tortilla 2 tostada, queso no derretido
+        if(!getTortilla().isToasted() && getTortilla2().isToasted() && !getQueso().isMelted()) return "caso3";
         // tortilla 1 no tostada, tortilla 2 no tostada, queso no derretido
+        if(!getTortilla().isToasted() && !getTortilla2().isToasted() && !getQueso().isMelted()) return "caso4";
         // tortilla 1 no tostada, tortilla 2 no tostada, queso derretido
+        if(!getTortilla().isToasted() && !getTortilla2().isToasted() && getQueso().isMelted()) return "caso5";
         // tortilla 1 tostada, tortilla 2 tostada, queso no derretido
+        if(getTortilla().isToasted() && getTortilla2().isToasted() && !getQueso().isMelted()) return "caso6";
+        else return "no hay gas";
 
-        return "";
+
     }
 
     public Queso getQueso() {
@@ -54,11 +62,20 @@ public class Quesadilla
 
 
     public Tortilla getTortilla() {
-        return tortilla;
+        return this.tortilla;
     }
 
     public void setTortilla(Tortilla tortilla) {
         this.tortilla = tortilla;
+    }
+
+    public Tortilla getTortilla2() {
+        return this.tortilla2;
+    }
+
+
+    public void setTortilla2(Tortilla tortilla2) {
+        this.tortilla2 = tortilla2;
     }
 
     public int getHeatLevel() {
