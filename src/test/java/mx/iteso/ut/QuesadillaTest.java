@@ -67,7 +67,7 @@ public class QuesadillaTest
        when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);
        when(mockedQueso.getMeltingTemperature()).thenReturn(10);
        assertEquals("You ran out of gas",quesadilla.prepareSingle());
-       //verify(mockedTortilla,never()).toast(true);
-       //verify(mockedQueso,never()).melt(true);
+       verify(mockedTortilla,times(1)).toast(true);
+       verify(mockedQueso,times(1)).melt(true);
    }
 }
