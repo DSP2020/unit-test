@@ -24,8 +24,8 @@ public class Quesadilla
              getQueso().melt(true);
 
          counter = counter + 1;
-         System.out.println(counter);
-        
+  
+         
          if(counter > 10)
             break;
 

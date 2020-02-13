@@ -12,6 +12,7 @@ public class QuesoChihuahuaTest {
         quesoChihuahua = new QuesoChihuahua();
     }
 
+    
     @Test
     public void testCurrentTemperature(){
         quesoChihuahua.setCurrentTemperature(21);
