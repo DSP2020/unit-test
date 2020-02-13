@@ -8,6 +8,7 @@ public class Quesadilla
 {
     private Queso queso;
     private Tortilla tortilla;
+    private Tortilla tortilla2;
     private int heatLevel;
 
     public String prepareSingle(){
@@ -51,14 +52,20 @@ public class Quesadilla
         this.queso = queso;
     }
 
-
     public Tortilla getTortilla() {
         return tortilla;
+    }
+    public Tortilla getTortilla2() {
+        return tortilla2;
     }
 
     public void setTortilla(Tortilla tortilla) {
         this.tortilla = tortilla;
     }
+    public void setTortilla2(Tortilla tortilla2) {
+        this.tortilla2 = tortilla2;
+    }
+
 
     public int getHeatLevel() {
         return heatLevel;

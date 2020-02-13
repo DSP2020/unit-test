@@ -49,7 +49,7 @@ public class QuesadillaTest
    @Test
    public void quesadillaTerrible(){
        //fail("Please implement corresponding test");
-       when(mockedQueso.isMelted()).thenReturn(false);
+      when(mockedQueso.isMelted()).thenReturn(false);
        when(mockedTortilla.isToasted()).thenReturn(true);
        when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
        when(mockedTortilla.getToastTemperature()).thenReturn(20);

@@ -3,7 +3,8 @@ package mx.iteso.ut;
 public class QuesoManchego implements Queso {
     boolean melted;
     int temperature;
-    int melting = 15;
+    int melting = 20;
+
     public boolean isMelted() {
         return this.melted;
     }
