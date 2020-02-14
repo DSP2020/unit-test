@@ -12,14 +12,21 @@ public class Quesadilla
 
     public String prepareSingle(){
 
+        int counter = 0;
 
-     while(getQueso().getCurrentTemperature()< getQueso().getMeltingTemperature() && getTortilla().getCurrentTemperature()< getTortilla().getToastTemperature()){
-         getTortilla().setCurrentTemperature(getTortilla().getCurrentTemperature() + getHeatLevel());
-         getQueso().setCurrentTemperature(getQueso().getCurrentTemperature() + getHeatLevel());
+     while(getQueso().getCurrentTemperature()<getQueso().getMeltingTemperature() && getTortilla().getCurrentTemperature()<getTortilla().getToastTemperature()){
+         
+        getTortilla().setCurrentTemperature(getTortilla().getCurrentTemperature() + getHeatLevel());
+        getQueso().setCurrentTemperature(getQueso().getCurrentTemperature() + getHeatLevel());
+
          if (getTortilla().getCurrentTemperature() >= getTortilla().getToastTemperature())
              getTortilla().toast(true);
          if (getQueso().getCurrentTemperature() >= getQueso().getMeltingTemperature())
              getQueso().melt(true);
+         if (counter==100)
+            break;
+        
+        counter ++;
      }
 
      if(getQueso().isMelted() && getTortilla().isToasted())
@@ -48,16 +55,15 @@ public class Quesadilla
         return queso;
     }
 
-    public void setQueso(Queso queso) {
+    public void setQueso(final Queso queso) {
         this.queso = queso;
     }
-
 
     public Tortilla getTortilla() {
         return tortilla;
     }
 
-    public void setTortilla(Tortilla tortilla) {
+    public void setTortilla(final Tortilla tortilla) {
         this.tortilla = tortilla;
     }
 
@@ -65,7 +71,7 @@ public class Quesadilla
         return heatLevel;
     }
 
-    public void setHeatLevel(int heatLevel) {
+    public void setHeatLevel(final int heatLevel) {
         this.heatLevel = heatLevel;
     }
 }
