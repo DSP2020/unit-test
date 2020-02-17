@@ -31,10 +31,21 @@ public class Quesadilla
          return "Terrible quesadilla";
      else
          return "You ran out of gas";
-
     }
 
     public String prepareDouble(){
+        while(getQueso().getCurrentTemperature()< getQueso().getMeltingTemperature() && getTortilla().getCurrentTemperature()< getTortilla().getToastTemperature()&& getTortilla2().getCurrentTemperature()< getTortilla2().getToastTemperature()){
+            getTortilla().setCurrentTemperature(getTortilla().getCurrentTemperature() + getHeatLevel());
+            getTortilla2().setCurrentTemperature(getTortilla2().getCurrentTemperature() + getHeatLevel());
+            getQueso().setCurrentTemperature(getQueso().getCurrentTemperature() + getHeatLevel());
+            if (getTortilla().getCurrentTemperature() >= getTortilla().getToastTemperature())
+                getTortilla().toast(true);
+            if (getQueso().getCurrentTemperature() >= getQueso().getMeltingTemperature())
+                getQueso().melt(true);
+            if (getTortilla2().getCurrentTemperature() >= getTortilla2().getToastTemperature())
+                getTortilla2().toast(true);
+        }
+
         // tortilla 1 tostada, tortilla 2 tostada, queso derretido
         if(getTortilla().isToasted() && getTortilla2().isToasted() && getQueso().isMelted()) return "caso1";
         // tortilla 1 no tostada, tortilla 2 tostada, queso derretido
@@ -47,7 +58,7 @@ public class Quesadilla
         if(!getTortilla().isToasted() && !getTortilla2().isToasted() && getQueso().isMelted()) return "caso5";
         // tortilla 1 tostada, tortilla 2 tostada, queso no derretido
         if(getTortilla().isToasted() && getTortilla2().isToasted() && !getQueso().isMelted()) return "caso6";
-        else return "no hay gas";
+        else return "caso default";
 
 
     }
@@ -60,7 +71,6 @@ public class Quesadilla
         this.queso = queso;
     }
 
-
     public Tortilla getTortilla() {
         return this.tortilla;
     }
@@ -72,7 +82,6 @@ public class Quesadilla
     public Tortilla getTortilla2() {
         return this.tortilla2;
     }
-
 
     public void setTortilla2(Tortilla tortilla2) {
         this.tortilla2 = tortilla2;
