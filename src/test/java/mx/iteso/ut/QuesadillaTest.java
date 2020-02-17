@@ -90,6 +90,7 @@ public class QuesadillaTest {
 	   when(mockedQueso.getMeltingTemperature()).thenReturn(10);
 	   assertEquals("Perfect quesadilla",quesadilla.prepareDouble());
 	   verify(mockedTortilla,times(1)).toast(true);
+	   verify(mockedTortilla2,times(1)).toast(true);
 	   verify(mockedQueso,times(1)).melt(true);
    } 
 
@@ -109,6 +110,7 @@ public class QuesadillaTest {
 	  when(mockedQueso.getMeltingTemperature()).thenReturn(10);
 	  assertEquals("Excellent quesadilla",quesadilla.prepareDouble());
 	  verify(mockedTortilla,times(1)).toast(true);
+	  verify(mockedTortilla2,times(1)).toast(true);
 	  verify(mockedQueso,times(1)).melt(true);
    }
    
@@ -128,6 +130,7 @@ public class QuesadillaTest {
 	   when(mockedQueso.getMeltingTemperature()).thenReturn(10);
 	   assertEquals("Good quesadilla",quesadilla.prepareDouble());
 	   verify(mockedTortilla,times(1)).toast(true);
+	   verify(mockedTortilla2,times(1)).toast(true);
 	   verify(mockedQueso,times(1)).melt(true);
    }
    
@@ -147,6 +150,7 @@ public class QuesadillaTest {
 	   when(mockedQueso.getMeltingTemperature()).thenReturn(10);
 	   assertEquals("Normal quesadilla",quesadilla.prepareDouble());
 	   verify(mockedTortilla,times(1)).toast(true);
+	   verify(mockedTortilla2,times(1)).toast(true);
 	   verify(mockedQueso,times(1)).melt(true);
    }
 
@@ -166,6 +170,7 @@ public class QuesadillaTest {
 	   when(mockedQueso.getMeltingTemperature()).thenReturn(10);
 	   assertEquals("Terrible quesadilla",quesadilla.prepareDouble());
 	   verify(mockedTortilla,times(1)).toast(true);
+	   verify(mockedTortilla2,times(1)).toast(true);
 	   verify(mockedQueso,times(1)).melt(true);
    }
    
@@ -185,6 +190,7 @@ public class QuesadillaTest {
 	   when(mockedQueso.getMeltingTemperature()).thenReturn(10);
 	   assertEquals("Horrible quesadilla",quesadilla.prepareDouble());
 	   verify(mockedTortilla,times(1)).toast(true);
+	   verify(mockedTortilla2,times(1)).toast(true);
 	   verify(mockedQueso,times(1)).melt(true);
    }
    
@@ -203,7 +209,8 @@ public class QuesadillaTest {
 	   when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);
 	   when(mockedQueso.getMeltingTemperature()).thenReturn(10);
 	   assertEquals("You ran out of gas",quesadilla.prepareDouble());
-	   verify(mockedTortilla,times(1)).toast(true);
+	   verify(mockedTortilla,times(1)).toast(true);	   
+	   verify(mockedTortilla2,times(1)).toast(true);
 	   verify(mockedQueso,times(1)).melt(true);
    } 
 
