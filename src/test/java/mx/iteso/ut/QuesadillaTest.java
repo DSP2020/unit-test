@@ -15,8 +15,8 @@ public class QuesadillaTest
    @Before
    public void setUp(){
       quesadilla = new Quesadilla();
-      mockedQueso = mock(Queso.class);
-      mockedTortilla = mock(Tortilla.class);
+      mockedQueso = mock(QuesoChihuahua.class);
+      mockedTortilla = mock(TortillaHarina.class);
       quesadilla.setQueso(mockedQueso);
       quesadilla.setTortilla(mockedTortilla);
 
