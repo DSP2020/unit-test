@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="mx.iteso.ut.QuesadillaTest" time="0.185" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="mx.iteso.ut.TortillaMaizTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.6+10-post-Ubuntu-1ubuntu118.04.1"/>
@@ -61,8 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaTerrible" time="0.178"/>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaBuena" time="0.003"/>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaPerfecta" time="0.002"/>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="noHayGas" time="0.002"/>
+  <testcase classname="mx.iteso.ut.TortillaMaizTest" name="testTrueToasted" time="0"/>
+  <testcase classname="mx.iteso.ut.TortillaMaizTest" name="testFalseToasted" time="0"/>
+  <testcase classname="mx.iteso.ut.TortillaMaizTest" name="testCurrentTemperature" time="0"/>
 </testsuite>
