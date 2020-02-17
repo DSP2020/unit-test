@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="mx.iteso.ut.QuesoChihuahuaTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="mx.iteso.ut.TortillaMaizTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_241\jre\bin"/>
@@ -67,8 +67,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="mx.iteso.ut.QuesoChihuahuaTest" name="testTrueMelt" time="0"/>
-  <testcase classname="mx.iteso.ut.QuesoChihuahuaTest" name="testFalseMelt" time="0"/>
-  <testcase classname="mx.iteso.ut.QuesoChihuahuaTest" name="testMelting" time="0"/>
-  <testcase classname="mx.iteso.ut.QuesoChihuahuaTest" name="testCurrentTemperature" time="0.001"/>
+  <testcase classname="mx.iteso.ut.TortillaMaizTest" name="testFalseToast" time="0"/>
+  <testcase classname="mx.iteso.ut.TortillaMaizTest" name="testToasting" time="0"/>
+  <testcase classname="mx.iteso.ut.TortillaMaizTest" name="testTrueToast" time="0"/>
+  <testcase classname="mx.iteso.ut.TortillaMaizTest" name="testCurrentTemperature" time="0"/>
 </testsuite>

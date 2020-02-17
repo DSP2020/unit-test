@@ -8,27 +8,27 @@ public class QuesoManchegoTest{
 
     QuesoManchego quesoManchego;
 
-    @before
-    void setUp(){
+    @Before
+    public void setUp(){
         quesoManchego = new QuesoManchego();
     }
 
-    @test
+    @Test
     public void testCurrentTemperature(){
         quesoManchego.setCurrentTemperature(21);
         assertEquals(21,quesoManchego.getCurrentTemperature());
     }
 
-    @test
+    @Test
     public void testFalseMelt(){
         quesoManchego.melt(false);
         assertFalse(quesoManchego.isMelted());
     }
 
-    @test
-    public void testTureMelt(){
+    @Test
+    public void testTrueMelt(){
         quesoManchego.melt(true);
-        assertFalse(quesoManchego.isMelted());
+        assertTrue(quesoManchego.isMelted());
     }
 
     @Test
