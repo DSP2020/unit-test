@@ -10,6 +10,13 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -26,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.QuesadillaTest">
     <configuration name="QuesadillaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mx.iteso.ut" />
       <extension name="coverage">
@@ -42,9 +49,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TortillaHarinaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mx.iteso.ut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.iteso.ut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx.iteso.ut" />
+      <option name="MAIN_CLASS_NAME" value="mx.iteso.ut.TortillaHarinaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TortillaHarinaTest.testToasting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mx.iteso.ut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.iteso.ut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx.iteso.ut" />
+      <option name="MAIN_CLASS_NAME" value="mx.iteso.ut.TortillaHarinaTest" />
+      <option name="METHOD_NAME" value="testToasting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TortillaMaizTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mx.iteso.ut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.iteso.ut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx.iteso.ut" />
+      <option name="MAIN_CLASS_NAME" value="mx.iteso.ut.TortillaMaizTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TortillaMaizTest.testToasting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mx.iteso.ut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.iteso.ut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx.iteso.ut" />
+      <option name="MAIN_CLASS_NAME" value="mx.iteso.ut.TortillaMaizTest" />
+      <option name="METHOD_NAME" value="testToasting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.QuesadillaTest" />
+        <item itemvalue="JUnit.TortillaHarinaTest" />
+        <item itemvalue="JUnit.TortillaHarinaTest.testToasting" />
+        <item itemvalue="JUnit.TortillaMaizTest" />
+        <item itemvalue="JUnit.TortillaMaizTest.testToasting" />
       </list>
     </recent_temporary>
   </component>
@@ -62,29 +135,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#Notifications" timestamp="1581946060395">
+    <state x="275" y="22" key="#Notifications" timestamp="1581948484102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1581946060395" />
-    <state width="1323" height="122" key="GridCell.Tab.0.bottom" timestamp="1581946191046">
+    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1581948484102" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581956534590">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="122" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581946191046" />
-    <state width="1323" height="122" key="GridCell.Tab.0.center" timestamp="1581946191045">
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1581956534590" />
+    <state width="1323" height="61" key="GridCell.Tab.0.bottom" timestamp="1581957854254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="122" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581946191045" />
-    <state width="1323" height="122" key="GridCell.Tab.0.left" timestamp="1581946191045">
+    <state width="1323" height="61" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581957854254" />
+    <state width="1323" height="61" key="GridCell.Tab.0.center" timestamp="1581957854253">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="122" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581946191045" />
-    <state width="1323" height="122" key="GridCell.Tab.0.right" timestamp="1581946191045">
+    <state width="1323" height="61" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581957854253" />
+    <state width="1323" height="61" key="GridCell.Tab.0.left" timestamp="1581957854253">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="122" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581946191045" />
-    <state x="384" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1581945695052">
+    <state width="1323" height="61" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581957854253" />
+    <state width="1323" height="61" key="GridCell.Tab.0.right" timestamp="1581957854253">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581945695052" />
+    <state width="1323" height="61" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581957854253" />
+    <state x="384" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1581954399146">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="384" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581954399145" />
   </component>
 </project>
