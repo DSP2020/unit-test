@@ -1,0 +1,35 @@
+package mx.iteso.ut;
+
+import org.junit.Test;
+import org.junit.Before;
+import static org.junit.Assert.*;
+
+public class QuesoMachegoTest {
+    QuesoMachego quesoMachego;
+
+    @Before
+    public void setUp(){
+        quesoMachego = new QuesoMachego();
+    }
+
+    @Test
+    public void testCurrentTemperature(){
+        quesoMachego.setCurrentTemperature(21);
+        assertEquals(21,quesoMachego.getCurrentTemperature());
+    }
+    @Test
+    public void testFalseMelt(){
+        quesoMachego.melt(false);
+        assertFalse(quesoMachego.isMelted());
+    }
+    @Test
+    public void testTrueMelt(){
+        quesoMachego.melt(true);
+        assertTrue(quesoMachego.isMelted());
+    }
+    @Test
+    public void testMelting(){
+        assertEquals(20,quesoMachego.getMeltingTemperature());
+    }
+
+}

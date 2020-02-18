@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="mx.iteso.ut.QuesadillaTest" time="0.162" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="mx.iteso.ut.QuesadillaTest" time="827.554" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
@@ -65,8 +65,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaTerrible" time="0.157"/>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaBuena" time="0.001"/>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaPerfecta" time="0.002"/>
-  <testcase classname="mx.iteso.ut.QuesadillaTest" name="noHayGas" time="0.002"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaTerrible" time="0.135"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadilladoblePerfecta" time="0.001"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaBuena" time="0.002"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="quesadillaPerfecta" time="0.001"/>
+  <testcase classname="mx.iteso.ut.QuesadillaTest" name="noHayGas" time="306.365"/>
+  <testcase classname="org.apache.maven.surefire.junit4.JUnit4Provider" name="mx.iteso.ut.QuesadillaTest" time="521.05">
+    <error message="Java heap space" type="java.lang.OutOfMemoryError">java.lang.OutOfMemoryError: Java heap space
+</error>
+  </testcase>
 </testsuite>
