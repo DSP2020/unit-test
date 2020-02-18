@@ -3,8 +3,8 @@ package mx.iteso.ut;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.times;
 
 public class TortillaHarinaTest {
     TortillaHarina mockedTortillaH;
@@ -16,7 +16,7 @@ public class TortillaHarinaTest {
         mockedTortillaH = mock(TortillaHarina.class);
         //mockedTortilla = mock(Tortilla.class);
         //mockedQueso.setCurrentTemperature(mockedQueso.getCurrentTemperature());
-        //quesadilla.setTortilla(mockedTortilla);
+        //mockedTortillaH.toast(mockedTortillaH);
 
 
     }
@@ -25,11 +25,23 @@ public class TortillaHarinaTest {
         when(mockedTortillaH.isToasted()).thenReturn(true);
         //when(mockedTortilla.isToasted()).thenReturn(true);
         //when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
-        //when(mockedTortilla.getToastTemperature()).thenReturn(10);
+        //when(mockedTortillaH.getToastTemperature()).thenReturn(10);
         when(mockedTortillaH.getCurrentTemperature()).thenReturn(2,8,8,8,14);
         when(mockedTortillaH.getToastTemperature()).thenReturn(10);
         //assertEquals("Perfect quesadilla",quesadilla.prepareSingle());
-        //verify(mockedTortilla,times(1)).toast(true);
+        verify(mockedTortillaH,times(1)).toast(true);
+        //verify(mockedQueso,times(1)).melt(true);
+    }
+    @Test
+    public void TortillaHMala(){
+        when(mockedTortillaH.isToasted()).thenReturn(false);
+        //when(mockedTortilla.isToasted()).thenReturn(true);
+        //when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
+        //when(mockedTortillaH.getToastTemperature()).thenReturn(10);
+        when(mockedTortillaH.getCurrentTemperature()).thenReturn(2,8,8,8,14);
+        when(mockedTortillaH.getToastTemperature()).thenReturn(10);
+        //assertEquals("Perfect quesadilla",quesadilla.prepareSingle());
+        verify(mockedTortillaH,times(1)).toast(false);
         //verify(mockedQueso,times(1)).melt(true);
     }
 }
