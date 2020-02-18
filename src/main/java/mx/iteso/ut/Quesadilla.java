@@ -46,6 +46,8 @@ public class Quesadilla
 
     public String prepareDouble(){
 
+        int counter = 0;
+
         while(getQueso().getCurrentTemperature()< getQueso().getMeltingTemperature() && 
         getTortilla1().getCurrentTemperature()< getTortilla1().getToastTemperature() &&
         getTortilla2().getCurrentTemperature()< getTortilla2().getToastTemperature()){
@@ -64,6 +66,11 @@ public class Quesadilla
             if (getQueso().getCurrentTemperature() >= getQueso().getMeltingTemperature())
                 getQueso().melt(true);
 
+            counter = counter + 1;
+  
+            if(counter > 10)
+               break;
+
             
         }
        
@@ -74,14 +81,11 @@ public class Quesadilla
         if (getQueso().isMelted() && !getTortilla1().isToasted() && getTortilla2().isToasted())
             return "Almost perfect quesadilla";
         // tortilla 1 tostada, tortilla 2 tostada, queso no derretido
-        if (!getQueso().isMelted() && getTortilla1().isToasted() && !getTortilla2().isToasted())
-            return "Bad quesadilla";
+        if (!getQueso().isMelted() && getTortilla1().isToasted() && getTortilla2().isToasted())
+            return "Bad quesadilla, Cheese not melted";
         // tortilla 1 no tostada, tortilla 2 no tostada, queso derretido
         if (getQueso().isMelted() && !getTortilla1().isToasted() && !getTortilla2().isToasted())
-            return "Bad quesadilla";
-        // tortilla 1 tostada, tortilla 2 tostada, queso no derretido
-        if(!getQueso().isMelted() && getTortilla1().isToasted() && getTortilla2().isToasted())
-            return "Terrible quesadilla";
+            return "Bad quesadilla, Burned Tortilla";
         // tortilla 1 no tostada, tortilla 2 tostada, queso no derretido
         if(!getQueso().isMelted() && !getTortilla1().isToasted() && getTortilla2().isToasted())
             return "Terrible quesadilla";
