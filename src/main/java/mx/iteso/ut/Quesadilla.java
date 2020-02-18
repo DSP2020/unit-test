@@ -34,6 +34,7 @@ public class Quesadilla
     }
 
     public String prepareDouble(){
+
         // tortilla 1 tostada, tortilla 2 tostada, queso derretido
         // tortilla 1 no tostada, tortilla 2 tostada, queso derretido
         // tortilla 1 no tostada, tortilla 2 tostada, queso no derretido
@@ -41,31 +42,43 @@ public class Quesadilla
         // tortilla 1 no tostada, tortilla 2 no tostada, queso derretido
         // tortilla 1 tostada, tortilla 2 tostada, queso no derretido
 
-        while(getQueso().getCurrentTemperature()< getQueso().getMeltingTemperature() 
-               && getTortilla().getCurrentTemperature()< getTortilla().getToastTemperature()){
-         
+        while (getQueso().getCurrentTemperature() < getQueso().getMeltingTemperature()
+                && getTortilla().getCurrentTemperature() < getTortilla().getToastTemperature()
+                && getTortillaExtra().getCurrentTemperature() < getTortillaExtra().getToastTemperature()) {
+
             getTortilla().setCurrentTemperature(getTortilla().getCurrentTemperature() + getHeatLevel());
-            getQueso().setCurrentTemperature(getQueso().getCurrentTemperature() + getHeatLevel
-                    
-            if (getTortilla().getCurrentTemperature() >= getTortilla().getToastTemperature())
+            getTortillaExtra().setCurrentTemperature(getTortillaExtra().getCurrentTemperature() + getHeatLevel());
+            getQueso().setCurrentTemperature(getQueso().getCurrentTemperature() + getHeatLevel());
+
+            if (getTortilla().getCurrentTemperature() >= getTortilla().getToastTemperature()) {
                 getTortilla().toast(true);
+            }
+            if (getTortillaExtra().getCurrentTemperature() >= getTortillaExtra().getToastTemperature()) {
+                getTortillaExtra().toast(true);
+            }
             if (getQueso().getCurrentTemperature() >= getQueso().getMeltingTemperature())
                 getQueso().melt(true);
         }
+        
+        if (getQueso().isMelted() && getTortilla().isToasted() && getTortillaExtra().isToasted())
+            return "Perfect quesadilla";
+        if (getQueso().isMelted() && (!getTortilla().isToasted() || !getTortillaExtra().isToasted()))
+            return "Good quesadilla";
+        if (!getQueso().isMelted() && (getTortilla().isToasted() || getTortillaExtra().isToasted()))
+            return "Terrible quesadilla";
+        else
+            return "You ran out of gas";
+        
+        
 
-     if(getQueso().isMelted() && getTortilla().isToasted())
-         return "Perfect quesadilla";
-     if(getQueso().isMelted() && !getTortilla().isToasted())
-         return "Good quesadilla";
-     if(!getQueso().isMelted() && getTortilla().isToasted())
-         return "Terrible quesadilla";
-     else
-         return "You ran out of gas";
+
     }
+    
 
     public Queso getQueso() {
         return queso;
     }
+    
 
     public void setQueso(Queso queso) {
         this.queso = queso;
@@ -75,9 +88,17 @@ public class Quesadilla
     public Tortilla getTortilla() {
         return tortilla;
     }
+    
+    public Tortilla getTortillaExtra(){
+        return tortillaExtra;
+    }
 
     public void setTortilla(Tortilla tortilla) {
         this.tortilla = tortilla;
+    }
+    
+    public void setTortillaExtra(Tortilla tortilla){
+        this.tortillaExtra = tortilla;
     }
 
     public int getHeatLevel() {

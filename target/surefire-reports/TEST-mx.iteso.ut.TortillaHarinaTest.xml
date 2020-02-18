@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="mx.iteso.ut.QuesoChihuahuaTest" time="0.015" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="mx.iteso.ut.TortillaHarinaTest" time="0.031" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="13.0.1+9"/>
@@ -14,7 +14,7 @@
     <property name="user.script" value=""/>
     <property name="user.country" value="MX"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="test" value="mx.iteso.ut.QuesoChihuahuaTest"/>
+    <property name="test" value="mx.iteso.ut.TortillaHarinaTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\coque\Desktop\DS\repositorios\unit-test"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="C:\Program Files\NetBeans-11.2\netbeans\java\maven\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="13"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=mx.iteso.ut.QuesoChihuahuaTest -Dmaven.ext.class.path=C:\Program Files\NetBeans-11.2\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=mx.iteso.ut.TortillaHarinaTest -Dmaven.ext.class.path=C:\Program Files\NetBeans-11.2\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-13.0.1"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -58,8 +58,8 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="mx.iteso.ut.QuesoChihuahuaTest" name="testTrueMelt" time="0.015"/>
-  <testcase classname="mx.iteso.ut.QuesoChihuahuaTest" name="testFalseMelt" time="0"/>
-  <testcase classname="mx.iteso.ut.QuesoChihuahuaTest" name="testMelting" time="0"/>
-  <testcase classname="mx.iteso.ut.QuesoChihuahuaTest" name="testCurrentTemperature" time="0"/>
+  <testcase classname="mx.iteso.ut.TortillaHarinaTest" name="testTrueMelt" time="0"/>
+  <testcase classname="mx.iteso.ut.TortillaHarinaTest" name="testFalseMelt" time="0"/>
+  <testcase classname="mx.iteso.ut.TortillaHarinaTest" name="testMelting" time="0.031"/>
+  <testcase classname="mx.iteso.ut.TortillaHarinaTest" name="testCurrentTemperature" time="0"/>
 </testsuite>

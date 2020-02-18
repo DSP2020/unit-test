@@ -3,42 +3,44 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package mx.iteso.ut;
+
 import org.junit.Test;
 import org.junit.Before;
 import static org.junit.Assert.*;
+
 
 /**
  *
  * @author coque
  */
-public class QuesoManchegoTest {
-    QuesoManchego quesoManchego;
-    
+public class TortillaMaizTest {
+        
+    TortillaMaiz tortillaMaiz;
+
     @Before
     public void setUp(){
-        quesoManchego = new QuesoManchego();
+        tortillaMaiz = new TortillaMaiz();
     }
-    
+
     @Test
     public void testCurrentTemperature(){
-        quesoManchego.setCurrentTemperature(21);
-        assertEquals(21,quesoManchego.getCurrentTemperature());
+        tortillaMaiz.setCurrentTemperature(21);
+        assertEquals(21,tortillaMaiz.getCurrentTemperature());
     }
-    
     @Test
     public void testFalseMelt(){
-        quesoManchego.melt(false);
-        assertFalse(quesoManchego.isMelted());
+        tortillaMaiz.toast(false);
+        assertFalse(tortillaMaiz.isToasted());
     }
     @Test
     public void testTrueMelt(){
-        quesoManchego.melt(true);
-        assertTrue(quesoManchego.isMelted());
+        tortillaMaiz.toast(true);
+        assertTrue(tortillaMaiz.isToasted());
     }
     @Test
     public void testMelting(){
-        assertEquals(20,quesoManchego.getMeltingTemperature());
+        assertEquals(20,tortillaMaiz.getToastTemperature());
     }
+    
 }
