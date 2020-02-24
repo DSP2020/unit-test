@@ -6,28 +6,44 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 import org.mockito.Mockito.*;
 
-public class QuesadillaTest
-{
-   Quesadilla quesadilla;
-   Queso mockedQueso;
-   Tortilla mockedTortilla;
-   Tortilla mockedTortilla2;
+public class QuesadillaTest {
+    /**
+     *
+     */
+    private Quesadilla quesadilla;
+    /**
+     *
+     */
+    private Queso mockedQueso;
+    /**
+     *
+     */
+    private Tortilla mockedTortilla;
+    /**
+     *
+     */
+    private Tortilla mockedTortilla2;
 
+    /**
+     *
+     */
    @Before
-   public void setUp(){
-      quesadilla = new Quesadilla();
-      mockedQueso = mock(Queso.class);
-      mockedTortilla = mock(Tortilla.class);
-      quesadilla.setQueso(mockedQueso);
-      quesadilla.setTortilla(mockedTortilla);
-
-
+   public void setUp() {
+       quesadilla = new Quesadilla();
+       mockedQueso = mock(Queso.class);
+       mockedTortilla = mock(Tortilla.class);
+       quesadilla.setQueso(mockedQueso);
+       quesadilla.setTortilla(mockedTortilla);
    }
+
+    /**
+     *
+     */
    @Test
-   public void quesadillaPerfecta(){
+   public void quesadillaPerfecta() {
        when(mockedQueso.isMelted()).thenReturn(true);
        when(mockedTortilla.isToasted()).thenReturn(true);
-       when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
+       when(mockedTortilla.getCurrentTemperature()).thenReturn(2, 8, 8, 8, 14);
        when(mockedTortilla.getToastTemperature()).thenReturn(10);
        when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);
        when(mockedQueso.getMeltingTemperature()).thenReturn(10);
