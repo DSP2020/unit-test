@@ -15,22 +15,24 @@ public class TortillaMaizTest {
     }
 
     @Test
-    public void testCurrentTemperature(){
+    public void testCurrentTemperature() {
         tortillaMaiz.setCurrentTemperature(21);
-        assertEquals(21,tortillaMaiz.getCurrentTemperature());
+        assertEquals(21,
+                tortillaMaiz.getCurrentTemperature());
     }
     @Test
-    public void testFalseToast(){
+    public void testFalseToast() {
         tortillaMaiz.toast(false);
         assertFalse(tortillaMaiz.isToasted());
     }
     @Test
-    public void testTrueToast(){
+    public void testTrueToast() {
         tortillaMaiz.toast(true);
         assertTrue(tortillaMaiz.isToasted());
     }
     @Test
     public void testToasting(){
-        assertEquals(25,tortillaMaiz.getToastTemperature());
+        assertEquals(25,
+                tortillaMaiz.getToastTemperature());
     }
 }
