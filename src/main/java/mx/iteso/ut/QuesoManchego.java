@@ -1,29 +1,65 @@
 package mx.iteso.ut;
 
+/**
+ * Implementación del queso manchego.
+ */
 public class QuesoManchego implements Queso {
+/**
+     * Estado del queso.
+     */
+    private boolean mMelted;
+    /**
+     * Temperatura del queso.
+     */
+    private int mTemperature;
+    /**
+     * Temperatura de derretimiento de queso.
+     */
+    private final int mMelting = 20;
 
-    boolean melted;
-    int temperature;
-    int melting = 25;
-
+    /**
+     * Estado del queso.
+     * @return Verdadero si el queso está derretido.
+     */
+    @Override
     public boolean isMelted() {
-        return this.melted;
+        return this.mMelted;
     }
 
+    /**
+     * Obtiene la temperatura actual del queso.
+     * @return La temperatura actual del queso.
+     */
+    @Override
     public int getCurrentTemperature() {
-        return this.temperature;
+        return this.mTemperature;
     }
 
+    /**
+     * Obtiene la temeratura de derretimiento del queso.
+     * @return La temperatura de derretimiento del queso.
+     */
+    @Override
     public int getMeltingTemperature() {
-        return this.melting;
+        return this.mMelting;
     }
 
-    public void setCurrentTemperature(int temp) {
-        this.temperature = temp;
+    /**
+     * Establece la temperatura actual del queso.
+     * @param temp La temperatura actual del queso.
+     */
+    @Override
+    public void setCurrentTemperature(final int temp) {
+        this.mTemperature = temp;
     }
 
-    public void melt(boolean melted) {
-        this.melted = melted;
+    /**
+     * Derrite el queso.
+     * @param melted bandera de queso derretido.
+     */
+    @Override
+    public void melt(final boolean melted) {
+        this.mMelted = melted;
 
     }
 }
