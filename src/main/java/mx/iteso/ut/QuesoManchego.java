@@ -1,31 +1,61 @@
 package mx.iteso.ut;
 
+/**
+ * Clase para los quesos chihuahua.
+ */
 public class QuesoManchego implements Queso {
+    /**
+     * Booleano que representa si está repetido.
+     */
     private boolean melted;
-    private int temperature;
-    private int melting = 20;
 
+    /**
+     * La temperatura en la que está el queso.
+     */
+    private int temperature;
+
+    /**
+     * Temperatura en la que se derrite.
+     */
+    private final int melting = 20;
+
+    /**
+     * Regresa si el queso está derretido.
+     * @return true si el queso está derretido, false si no
+     */
     public boolean isMelted() {
         return this.melted;
     }
 
+    /**
+     * Regresa la temperatura actual.
+     * @return int con la temperatura
+     */
     public int getCurrentTemperature() {
         return this.temperature;
     }
 
+    /**
+     * Regresa la temperatura a la que se derrite este queso.
+     * @return int con la temperatura a la que se derrite
+     */
     public int getMeltingTemperature() {
         return this.melting;
     }
 
-    public void setCurrentTemperature(int temp) {
-        this.temperature = temp;
+    /**
+     * Actualiza la temperatura actual.
+     * @param newTemp la nueva temperatura
+     */
+    public void setCurrentTemperature(final int newTemp) {
+        this.temperature = newTemp;
     }
 
-    public void melt(boolean melted) {
-        this.melted = melted;
-    }
-
-    public void setMeltingTemperature(int temp){
-        this.melting = temp;
+    /**
+     * Actualiza si el queso está derretido.
+     * @param newMelted true si está derretido false si no
+     */
+    public void melt(final boolean newMelted) {
+        this.melted = newMelted;
     }
 }
