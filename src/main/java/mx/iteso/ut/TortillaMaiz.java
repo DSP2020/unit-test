@@ -1,26 +1,59 @@
 package mx.iteso.ut;
 
+/**
+ * class.
+ */
 public class TortillaMaiz implements Tortilla {
-    boolean toasted;
-    int cTemperature = 15;
-    int tTemperature;
+    /**
+     * toasted boolean.
+     */
+    private boolean toasted;
+    /**
+     * cTemperature int.
+     */
+    private int cTemperature;
+    /**
+     * tTemperature int.
+     */
+    private int tTemperature = 0;
+
+    /**
+     *
+     * @return toasted var
+     */
     public boolean isToasted() {
         return this.toasted;
     }
 
+    /**
+     *
+     * @return tTemperature var
+     */
     public int getToastTemperature() {
         return this.tTemperature;
     }
 
+    /**
+     *
+     * @return cTemperature var
+     */
     public int getCurrentTemperature() {
         return this.cTemperature;
     }
 
-    public void setCurrentTemperature(int temp) {
+    /**
+     *
+     * @param temp int
+     */
+    public void setCurrentTemperature(final int temp) {
         this.cTemperature = temp;
     }
 
-    public void toast(boolean toasted) {
-        this.toasted = toasted;
+    /**
+     *
+     * @param varToasted boolean
+     */
+    public void toast(final boolean varToasted) {
+        this.toasted = varToasted;
     }
 }

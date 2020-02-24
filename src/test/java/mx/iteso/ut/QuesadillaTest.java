@@ -115,14 +115,14 @@ public class QuesadillaTest
         when(mockedTortilla2.isToasted()).thenReturn(true);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
         when(mockedTortilla2.getCurrentTemperature()).thenReturn(2,8,8,8,14);
-        when(mockedTortilla.getToastTemperature()).thenReturn(20);
-        when(mockedTortilla2.getToastTemperature()).thenReturn(20);
+        when(mockedTortilla.getToastTemperature()).thenReturn(10);
+        when(mockedTortilla2.getToastTemperature()).thenReturn(10);
         when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);
         when(mockedQueso.getMeltingTemperature()).thenReturn(10);
         assertEquals("Crunchy",quesadilla.prepareDouble());
         verify(mockedTortilla,never()).toast(false);
         verify(mockedTortilla2,never()).toast(true);
-        verify(mockedQueso,times(1)).melt(false);
+        verify(mockedQueso,never()).melt(false);
     }
 
     @Test
@@ -139,7 +139,7 @@ public class QuesadillaTest
         assertEquals("No gas",quesadilla.prepareDouble());
         verify(mockedTortilla,never()).toast(false);
         verify(mockedTortilla2,never()).toast(false);
-        verify(mockedQueso,times(1)).melt(false);
+        verify(mockedQueso,times(1)).melt(true);
     }
 
     @Test
@@ -166,13 +166,13 @@ public class QuesadillaTest
         when(mockedTortilla2.isToasted()).thenReturn(true);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
         when(mockedTortilla2.getCurrentTemperature()).thenReturn(2,8,8,8,14);
-        when(mockedTortilla.getToastTemperature()).thenReturn(20);
-        when(mockedTortilla2.getToastTemperature()).thenReturn(20);
+        when(mockedTortilla.getToastTemperature()).thenReturn(10);
+        when(mockedTortilla2.getToastTemperature()).thenReturn(10);
         when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);
         when(mockedQueso.getMeltingTemperature()).thenReturn(10);
         assertEquals("Mala",quesadilla.prepareDouble());
         verify(mockedTortilla,never()).toast(true);
         verify(mockedTortilla2,never()).toast(true);
-        verify(mockedQueso,times(1)).melt(false);
+        verify(mockedQueso,never()).melt(false);
     }
 }
