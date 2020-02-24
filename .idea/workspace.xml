@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc9c3997-33f5-49d4-9881-d2c92e09a7c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/Quesadilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/Quesadilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/Queso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/Queso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/QuesoChihuahua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/QuesoChihuahua.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/QuesoManchego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/QuesoManchego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/Tortilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/Tortilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/TortillaHarina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/TortillaHarina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/TortillaMaiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/iteso/ut/TortillaMaiz.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XkynD0LP76MoOA6TGgL2dGL8AW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc9c3997-33f5-49d4-9881-d2c92e09a7c1" name="Default Changelist" comment="" />
+      <created>1581604551352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581604551352</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="128" key="#Plugins" timestamp="1582555742413">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="128" key="#Plugins/0.23.1440.877@0.23.1440.877" timestamp="1582555742413" />
+    <state x="533" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1581948956737">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="533" y="172" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1581948956737" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1581947881427">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1581947881427" />
+    <state x="376" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1582555772844">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="376" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582555772844" />
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup" timestamp="1582555701891">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582555701891" />
   </component>
 </project>
