@@ -1,28 +1,57 @@
 package mx.iteso.ut;
 
+/**
+ * @author hecto
+ *
+ */
 public class QuesoChihuahua implements Queso {
+    /**
+     */
+    private boolean melted;
 
-    boolean melted;
-    int temperature;
-    int melting = 20;
+    /**
+     */
+    private int temperature;
 
-    public boolean isMelted() {
+    /**
+     */
+    private final int melting = 20;
+
+
+    /**
+     * @return boolean
+     */
+    public final boolean isMelted() {
         return this.melted;
     }
 
-    public int getCurrentTemperature() {
+    /**
+     * @return int
+     */
+    public final int getCurrentTemperature() {
         return this.temperature;
     }
 
-    public int getMeltingTemperature() {
+    /**
+     * @return int
+     */
+    public final int getMeltingTemperature() {
         return this.melting;
     }
 
-    public void setCurrentTemperature(int temp) {
-        this.temperature = temp;
+    /**
+     * @param t
+     * temperature
+     */
+    public final void setCurrentTemperature(final int t) {
+        this.temperature = t;
     }
 
-    public void melt(boolean melted) {
-        this.melted = melted;
+    /**
+     * @param m
+     * melt
+     */
+    public final void melt(final boolean m) {
+        this.melted = m;
     }
 }
