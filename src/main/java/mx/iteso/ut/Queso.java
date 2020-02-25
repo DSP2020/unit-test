@@ -1,9 +1,28 @@
 package mx.iteso.ut;
-
 public interface Queso {
-    public boolean isMelted();
-    public int getCurrentTemperature();
-    public int getMeltingTemperature();
-    public void setCurrentTemperature(int temp);
-    public void melt(boolean melted);
+    /**
+     * Metodo.
+     * @return valor melted.
+     */
+     boolean isMelted();
+    /**
+     * Metodo.
+     * @return valor current temp.
+     */
+     int getCurrentTemperature();
+    /**
+     * Metodo.
+     * @return valor melting temp.
+     */
+     int getMeltingTemperature();
+    /**
+     * Metodo.
+     * @param temp es una variable.
+     */
+     void setCurrentTemperature(int temp);
+    /**
+     * Metodo.
+     * @param melted es una variable.
+     */
+     void melt(boolean melted);
 }
