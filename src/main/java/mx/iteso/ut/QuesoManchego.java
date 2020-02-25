@@ -1,5 +1,5 @@
 package mx.iteso.ut;
-public class QuesoChihuahua implements Queso {
+public class QuesoManchego implements Queso {
     /**
      * Variable v o f.
      */

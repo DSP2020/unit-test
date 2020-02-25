@@ -10,7 +10,7 @@ public class TortillaHarina implements Tortilla {
      */
     private int temperature;
     /**
-     * Variable.
+     * Variable entera.
      */
     private final int tosted = 20;
     /**

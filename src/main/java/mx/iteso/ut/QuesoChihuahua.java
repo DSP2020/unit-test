@@ -1,15 +1,15 @@
 package mx.iteso.ut;
 public class QuesoChihuahua implements Queso {
     /**
-     * Variable.
+     * Variable f o v.
      */
    private boolean melted;
     /**
-     * Variable.
+     * Variable entera.
      */
     private int temperature;
     /**
-     * Variable.
+     * Variable entera.
      */
    private final int melting = 20;
     /**
