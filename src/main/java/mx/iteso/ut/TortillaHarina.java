@@ -1,23 +1,32 @@
 package mx.iteso.ut;
 
+/**
+ * Clase Tortilla de Harina.
+ */
 public class TortillaHarina implements Tortilla {
+
+    /** @return booleano que define si esta tostada o no la tortilla. */
     public boolean isToasted() {
         return false;
     }
 
+    /** @return entero que define temperatura a la que se tuesta. */
     public int getToastTemperature() {
         return 0;
     }
 
+    /** @return entero que muestra la temperatura actual de la tortilla. */
     public int getCurrentTemperature() {
         return 0;
     }
 
-    public void setCurrentTemperature(int temp) {
+    /** @param temp settea la temperatura actual de la tortilla. */
+    public void setCurrentTemperature(final int temp) {
 
     }
 
-    public void toast(boolean toasted) {
+    /** @param toasted pasa el parametro de si esta o no tostada. */
+    public void toast(final boolean toasted) {
 
     }
 }
