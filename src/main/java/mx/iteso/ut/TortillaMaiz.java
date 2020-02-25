@@ -1,28 +1,64 @@
 package mx.iteso.ut;
 
+/**
+ * clase que implementa la inteface Tortilla.
+ */
 public class TortillaMaiz implements Tortilla {
-    boolean toasted;
-    int temperature;
-    int toastTemperature = 10;
+    /**
+     * testing value for toastTemperature.
+     */
+    static final int TOAST_TEMPERATURE_TEST = 10;
+    /**
+     * booleano para saber si la tortilla se tostó.
+     */
+    private boolean toasted;
+    /**
+     * temperatura de la tortilla.
+     */
+    private int temperature;
+    /**
+     * toastTemperature value.
+     */
+    private int toastTemperature = TOAST_TEMPERATURE_TEST;
 
-    public boolean isToasted() {
+    /**
+     *
+     * @return if the tortella is toasted
+     */
+    public final boolean isToasted() {
         return this.toasted;
     }
 
-    public int getToastTemperature() {
+    /**
+     *
+     * @return la temperatura en que la tortilla se tueste.
+     */
+    public final int getToastTemperature() {
         return this.toastTemperature;
     }
 
-    public int getCurrentTemperature() {
+    /**
+     *
+     * @return la actual temperatura de la tortilla
+     */
+    public final int getCurrentTemperature() {
         return this.temperature;
     }
 
-    public void setCurrentTemperature(int temp) {
+    /**
+     *
+     * @param temp to set temperature.
+     */
+    public void setCurrentTemperature(final int temp) {
         this.temperature = temp;
     }
 
-    public void toast(boolean toasted) {
-        this.toasted = toasted;
+    /**
+     *
+     * @param toastedValue para setear si la tortilla se tostó.
+     */
+    public void toast(final boolean toastedValue) {
+        this.toasted = toastedValue;
     }
 }
 

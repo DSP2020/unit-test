@@ -1,9 +1,37 @@
 package mx.iteso.ut;
 
+/**
+ * Interfe.
+ */
+
 public interface Queso {
-    public boolean isMelted();
-    public int getCurrentTemperature();
-    public int getMeltingTemperature();
-    public void setCurrentTemperature(int temp);
-    public void melt(boolean melted);
+    /**
+     *
+     * @return si el queso se derritio
+     */
+    boolean isMelted();
+
+    /**
+     *
+     * @return la temperatura actual del queso
+     */
+    int getCurrentTemperature();
+
+    /**
+     *
+     * @return la temperatura en la que se derrite el queso
+     */
+    int getMeltingTemperature();
+
+    /**
+     *
+     * @param temp to set temperature
+     */
+    void setCurrentTemperature(int temp);
+
+    /**
+     *
+     * @param melted si se ha derretido el queso
+     */
+    void melt(boolean melted);
 }
