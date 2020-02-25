@@ -1,10 +1,39 @@
 package mx.iteso.ut;
-
+/***
+ * Esta clase define metodos que cada clase que herede debe implementar.
+ * @author: JorgeDong.
+ * @version: 21/02/2020
+*/
 public interface Tortilla {
-    public boolean isToasted();
-    public int getToastTemperature();
-    public int getCurrentTemperature();
-    public void setCurrentTemperature(int temp);
-    public void toast(boolean toasted);
+    /**
+    * Método que devuelve el número de ítems (números aleatorios) existentes en
+    * la serie.
+    * @return El número de ítems (números aleatorios) de que consta la serie
+    */
+    boolean isToasted();
+    /**
+    * Método que devuelve el número de ítems (números aleatorios) existentes en
+    * la serie.
+    * @return El número de ítems (números aleatorios) de que consta la serie
+    */
+    int getToastTemperature();
+    /**
+    * Método que devuelve el número de ítems (números aleatorios) existentes en
+    * la serie.
+    * @return El número de ítems (números aleatorios) de que consta la serie
+    */
+    int getCurrentTemperature();
+    /**
+    * Método que devuelve el número de ítems (números aleatorios) existentes en
+    * la serie.
+    *@param temp El parámetro numeroItems define el número de elementos que
+    */
+    void setCurrentTemperature(int temp);
+    /**
+    * Método que devuelve el número de ítems (números aleatorios) existentes en
+    * la serie.
+    *@param toasted El parámetro numeroItems define el número de elementos que
+    */
+    void toast(boolean toasted);
 
 }

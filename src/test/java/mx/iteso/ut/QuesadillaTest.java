@@ -5,25 +5,27 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 import org.mockito.Mockito.*;
 
-public class QuesadillaTest
-{
+public class QuesadillaTest {
+  /**
+
+ * Esto es un comentario para javadoc ejemplo aprenderaprogramar.com
+
+ */
    Quesadilla quesadilla;
    Queso mockedQueso;
    Tortilla mockedTortilla;
    Tortilla mockedTortillaExtra;
   
-   @Before
-   public void setUp(){
-      quesadilla = new Quesadilla();
-      mockedQueso = mock(Queso.class);
-      mockedTortilla = mock(Tortilla.class);
-      mockedTortillaExtra = mock(Tortilla.class);
-      quesadilla.setQueso(mockedQueso);
-      quesadilla.setTortilla(mockedTortilla);
-      quesadilla.setTortillaExtra(mockedTortillaExtra);
-
-    
-   }
+    @Before
+    public void setUp(){
+        quesadilla = new Quesadilla();
+        mockedQueso = mock(Queso.class);
+        mockedTortilla = mock(Tortilla.class);
+        mockedTortillaExtra = mock(Tortilla.class);
+        quesadilla.setQueso(mockedQueso);
+        quesadilla.setTortilla(mockedTortilla);
+        quesadilla.setTortillaExtra(mockedTortillaExtra);
+    }
    @Test
    public void quesadillaPerfecta(){
        when(mockedQueso.isMelted()).thenReturn(true);
