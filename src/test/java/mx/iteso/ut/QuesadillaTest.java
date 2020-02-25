@@ -19,7 +19,7 @@ public class QuesadillaTest
 
 
    @Before
-   public void setUp(){
+   public void setUp() {
       quesadilla = new Quesadilla();
       mockedQueso = mock(Queso.class);
       mockedQuesoChihuahua = mock(QuesoChihuahua.class);
@@ -27,7 +27,7 @@ public class QuesadillaTest
       mockedTortilla = mock(Tortilla.class);
       mockedTortilla1 = mock(Tortilla.class);
       mockedTortillaHarina = mock(TortillaHarina.class);
-       mockedTortillaMaiz = mock(TortillaMaiz.class);
+      mockedTortillaMaiz = mock(TortillaMaiz.class);
       quesadilla.setQueso(mockedQueso);
       quesadilla.setTortilla(mockedTortilla);
       quesadilla.setTortillaH(mockedTortillaHarina);
@@ -39,7 +39,7 @@ public class QuesadillaTest
 
    }
    @Test
-   public void quesadillaPerfecta(){
+   public void quesadillaPerfecta() {
        when(mockedQueso.isMelted()).thenReturn(true);
        when(mockedTortilla.isToasted()).thenReturn(true);
        when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -51,7 +51,7 @@ public class QuesadillaTest
        verify(mockedQueso,times(1)).melt(true);
    }
    @Test
-   public void quesadillaBuena(){
+   public void quesadillaBuena() {
        when(mockedQueso.isMelted()).thenReturn(true);
        when(mockedTortilla.isToasted()).thenReturn(false);
        when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -63,7 +63,7 @@ public class QuesadillaTest
        verify(mockedQueso,times(1)).melt(true);
    }
    @Test
-   public void quesadillaTerrible(){
+   public void quesadillaTerrible() {
        when(mockedQueso.isMelted()).thenReturn(false);
        when(mockedTortilla.isToasted()).thenReturn(true);
        when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -76,7 +76,7 @@ public class QuesadillaTest
        //fail("Please implement corresponding test");
    }
    @Test
-   public void noHayGas(){
+   public void noHayGas() {
        when(mockedQueso.isMelted()).thenReturn(false);
        when(mockedTortilla.isToasted()).thenReturn(false);
        when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -90,7 +90,7 @@ public class QuesadillaTest
    }
 
     @Test
-    public void quesadillaPerfectaD(){
+    public void quesadillaPerfectaD() {
         when(mockedQueso.isMelted()).thenReturn(true);
         when(mockedTortilla.isToasted()).thenReturn(true);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -106,7 +106,7 @@ public class QuesadillaTest
         verify(mockedQueso,times(1)).melt(true);
     }
     @Test
-    public void quesadillaBuenaD(){
+    public void quesadillaBuenaD() {
         when(mockedQueso.isMelted()).thenReturn(true);
         when(mockedTortilla.isToasted()).thenReturn(false);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -121,7 +121,7 @@ public class QuesadillaTest
         verify(mockedQueso,times(1)).melt(true);
     }
     @Test
-    public void quesadillaBuenaD1(){
+    public void quesadillaBuenaD1() {
         when(mockedQueso.isMelted()).thenReturn(true);
         when(mockedTortilla.isToasted()).thenReturn(true);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -136,7 +136,7 @@ public class QuesadillaTest
         verify(mockedQueso,times(1)).melt(true);
     }
     @Test
-    public void quesadillaBuenaD2(){
+    public void quesadillaBuenaD2() {
         when(mockedQueso.isMelted()).thenReturn(false);
         when(mockedTortilla.isToasted()).thenReturn(true);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -151,7 +151,7 @@ public class QuesadillaTest
         verify(mockedQueso,times(1)).melt(true);
     }
     @Test
-    public void quesadillaTerribleD(){
+    public void quesadillaTerribleD() {
         when(mockedQueso.isMelted()).thenReturn(false);
         when(mockedTortilla.isToasted()).thenReturn(false);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -167,7 +167,7 @@ public class QuesadillaTest
         //fail("Please implement corresponding test");
     }
     @Test
-    public void quesadillaTerribleD1(){
+    public void quesadillaTerribleD1() {
         when(mockedQueso.isMelted()).thenReturn(true);
         when(mockedTortilla.isToasted()).thenReturn(false);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -183,7 +183,7 @@ public class QuesadillaTest
         //fail("Please implement corresponding test");
     }
     @Test
-    public void quesadillaTerribleD2(){
+    public void quesadillaTerribleD2() {
         when(mockedQueso.isMelted()).thenReturn(false);
         when(mockedTortilla.isToasted()).thenReturn(true);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -200,7 +200,7 @@ public class QuesadillaTest
     }
 
     @Test
-    public void noHayGasD(){
+    public void noHayGasD() {
         when(mockedQueso.isMelted()).thenReturn(false);
         when(mockedTortilla.isToasted()).thenReturn(false);
         when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -217,7 +217,7 @@ public class QuesadillaTest
     }
 
     @Test
-    public void quesadillaPerfectaMaizManchego(){
+    public void quesadillaPerfectaMaizManchego() {
         when(mockedQuesoManchego.isMelted()).thenReturn(true);
         when(mockedTortillaMaiz.isToasted()).thenReturn(true);
         when(mockedTortillaMaiz.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -229,7 +229,7 @@ public class QuesadillaTest
         verify(mockedQuesoManchego,times(1)).melt(true);
     }
     @Test
-    public void quesadillaBuenaMaizManchego(){
+    public void quesadillaBuenaMaizManchego() {
         when(mockedQuesoManchego.isMelted()).thenReturn(true);
         when(mockedTortillaMaiz.isToasted()).thenReturn(false);
         when(mockedTortillaMaiz.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -241,7 +241,7 @@ public class QuesadillaTest
         verify(mockedQuesoManchego,times(1)).melt(true);
     }
     @Test
-    public void quesadillaTerribleMaizManchego(){
+    public void quesadillaTerribleMaizManchego() {
         when(mockedQuesoManchego.isMelted()).thenReturn(false);
         when(mockedTortillaMaiz.isToasted()).thenReturn(true);
         when(mockedTortillaMaiz.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -254,7 +254,7 @@ public class QuesadillaTest
         //fail("Please implement corresponding test");
     }
     @Test
-    public void noHayGasMaizManchego(){
+    public void noHayGasMaizManchego() {
         when(mockedQuesoManchego.isMelted()).thenReturn(false);
         when(mockedTortillaMaiz.isToasted()).thenReturn(false);
         when(mockedTortillaMaiz.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -268,7 +268,7 @@ public class QuesadillaTest
     }
 
     @Test
-    public void quesadillaPerfectaMaizChihuahua(){
+    public void quesadillaPerfectaMaizChihuahua() {
         when(mockedQuesoChihuahua.isMelted()).thenReturn(true);
         when(mockedTortillaMaiz.isToasted()).thenReturn(true);
         when(mockedTortillaMaiz.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -280,7 +280,7 @@ public class QuesadillaTest
         verify(mockedQuesoChihuahua,times(1)).melt(true);
     }
     @Test
-    public void quesadillaBuenaMaizChihuahua(){
+    public void quesadillaBuenaMaizChihuahua() {
         when(mockedQuesoChihuahua.isMelted()).thenReturn(true);
         when(mockedTortillaMaiz.isToasted()).thenReturn(false);
         when(mockedTortillaMaiz.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -292,7 +292,7 @@ public class QuesadillaTest
         verify(mockedQuesoChihuahua,times(1)).melt(true);
     }
     @Test
-    public void quesadillaTerribleMaizChihuahua(){
+    public void quesadillaTerribleMaizChihuahua() {
         when(mockedQuesoChihuahua.isMelted()).thenReturn(false);
         when(mockedTortillaMaiz.isToasted()).thenReturn(true);
         when(mockedTortillaMaiz.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -305,7 +305,7 @@ public class QuesadillaTest
         //fail("Please implement corresponding test");
     }
     @Test
-    public void noHayGasMaizChihuahua(){
+    public void noHayGasMaizChihuahua() {
         when(mockedQuesoChihuahua.isMelted()).thenReturn(false);
         when(mockedTortillaMaiz.isToasted()).thenReturn(false);
         when(mockedTortillaMaiz.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -319,7 +319,7 @@ public class QuesadillaTest
     }
 
     @Test
-    public void quesadillaPerfectaHarinaManchego(){
+    public void quesadillaPerfectaHarinaManchego() {
         when(mockedQuesoManchego.isMelted()).thenReturn(true);
         when(mockedTortillaHarina.isToasted()).thenReturn(true);
         when(mockedTortillaHarina.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -331,7 +331,7 @@ public class QuesadillaTest
         verify(mockedQuesoManchego,times(1)).melt(true);
     }
     @Test
-    public void quesadillaBuenaHarinaManchego(){
+    public void quesadillaBuenaHarinaManchego() {
         when(mockedQuesoManchego.isMelted()).thenReturn(true);
         when(mockedTortillaHarina.isToasted()).thenReturn(false);
         when(mockedTortillaHarina.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -343,7 +343,7 @@ public class QuesadillaTest
         verify(mockedQuesoManchego,times(1)).melt(true);
     }
     @Test
-    public void quesadillaTerribleHarinaManchego(){
+    public void quesadillaTerribleHarinaManchego() {
         when(mockedQuesoManchego.isMelted()).thenReturn(false);
         when(mockedTortillaHarina.isToasted()).thenReturn(true);
         when(mockedTortillaHarina.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -356,7 +356,7 @@ public class QuesadillaTest
         //fail("Please implement corresponding test");
     }
     @Test
-    public void noHayGasHarinaManchego(){
+    public void noHayGasHarinaManchego() {
         when(mockedQuesoManchego.isMelted()).thenReturn(false);
         when(mockedTortillaHarina.isToasted()).thenReturn(false);
         when(mockedTortillaHarina.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -369,7 +369,7 @@ public class QuesadillaTest
         //fail("Please implement corresponding test");
     }
     @Test
-    public void quesadillaPerfectaHarinaChihuahua(){
+    public void quesadillaPerfectaHarinaChihuahua() {
         when(mockedQuesoChihuahua.isMelted()).thenReturn(true);
         when(mockedTortillaHarina.isToasted()).thenReturn(true);
         when(mockedTortillaHarina.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -381,7 +381,7 @@ public class QuesadillaTest
         verify(mockedQuesoChihuahua,times(1)).melt(true);
     }
     @Test
-    public void quesadillaBuenaHarinaChihuahua(){
+    public void quesadillaBuenaHarinaChihuahua() {
         when(mockedQuesoChihuahua.isMelted()).thenReturn(true);
         when(mockedTortillaHarina.isToasted()).thenReturn(false);
         when(mockedTortillaHarina.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -393,7 +393,7 @@ public class QuesadillaTest
         verify(mockedQuesoChihuahua,times(1)).melt(true);
     }
     @Test
-    public void quesadillaTerribleHarinaChihuahua(){
+    public void quesadillaTerribleHarinaChihuahua() {
         when(mockedQuesoChihuahua.isMelted()).thenReturn(false);
         when(mockedTortillaHarina.isToasted()).thenReturn(true);
         when(mockedTortillaHarina.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -406,7 +406,7 @@ public class QuesadillaTest
         //fail("Please implement corresponding test");
     }
     @Test
-    public void noHayGasHarinaChihuahua(){
+    public void noHayGasHarinaChihuahua() {
         when(mockedQuesoChihuahua.isMelted()).thenReturn(false);
         when(mockedTortillaHarina.isToasted()).thenReturn(false);
         when(mockedTortillaHarina.getCurrentTemperature()).thenReturn(2,8,8,8,14);

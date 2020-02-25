@@ -13,7 +13,7 @@ public class QuesoManchegoTest {
     //Tortilla mockedTortilla;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         mockedQueso = new QuesoManchego();
         mockedQueso = mock(QuesoManchego.class);
         //mockedTortilla = mock(Tortilla.class);
@@ -23,7 +23,7 @@ public class QuesoManchegoTest {
 
     }
     @Test
-    public void ManchegoPerfecto(){
+    public void ManchegoPerfecto() {
         when(mockedQueso.isMelted()).thenReturn(true);
         //when(mockedTortilla.isToasted()).thenReturn(true);
         //when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -35,7 +35,7 @@ public class QuesoManchegoTest {
         verify(mockedQueso,times(1)).melt(true);
     }
     @Test
-    public void ManchegoMalo(){
+    public void ManchegoMalo() {
         when(mockedQueso.isMelted()).thenReturn(false);
         //when(mockedTortilla.isToasted()).thenReturn(true);
         //when(mockedQueso.getCurrentTemperature()).thenReturn(2,8,8,8,14);

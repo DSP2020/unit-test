@@ -11,7 +11,7 @@ public class TortillaHarinaTest {
     //Tortilla mockedTortilla;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         mockedTortillaH = new TortillaHarina();
         mockedTortillaH = mock(TortillaHarina.class);
         //mockedTortilla = mock(Tortilla.class);
@@ -21,7 +21,7 @@ public class TortillaHarinaTest {
 
     }
     @Test
-    public void TortillaHPerfecta(){
+    public void TortillaHPerfecta() {
         when(mockedTortillaH.isToasted()).thenReturn(true);
         //when(mockedTortilla.isToasted()).thenReturn(true);
         //when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);
@@ -33,7 +33,7 @@ public class TortillaHarinaTest {
         //verify(mockedQueso,times(1)).melt(true);
     }
     @Test
-    public void TortillaHMala(){
+    public void TortillaHMala() {
         when(mockedTortillaH.isToasted()).thenReturn(false);
         //when(mockedTortilla.isToasted()).thenReturn(true);
         //when(mockedTortilla.getCurrentTemperature()).thenReturn(2,8,8,8,14);

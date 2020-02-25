@@ -1,26 +1,26 @@
 package mx.iteso.ut;
 
 public class TortillaHarina implements Tortilla {
-    boolean toasted;
-    int temperature;
-    int Ttemp = 20;
-    public boolean isToasted() {
+    private boolean toasted;
+    private int temperature;
+    private int tTemp = 20;
+    public final boolean isToasted() {
         return this.toasted;
     }
 
-    public int getToastTemperature() {
-        return this.Ttemp;
+    public final int getToastTemperature() {
+        return this.tTemp;
     }
 
-    public int getCurrentTemperature() {
+    public final int getCurrentTemperature() {
         return this.temperature;
     }
 
-    public void setCurrentTemperature(int temp) {
-        this.temperature=temp;
+    public final void setCurrentTemperature(final int temp) {
+        this.temperature = temp;
     }
 
-    public void toast(boolean toasted) {
-        this.toasted=toasted;
+    public final void toast(final boolean toasted) {
+        this.toasted = toasted;
     }
 }
