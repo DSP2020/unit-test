@@ -10,10 +10,6 @@ import org.junit.Before;
 import static org.junit.Assert.*;
 
 
-/**
- *
- * @author coque
- */
 public class TortillaMaizTest {
         
     TortillaMaiz tortillaMaiz;

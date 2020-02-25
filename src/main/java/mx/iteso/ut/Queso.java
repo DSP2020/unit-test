@@ -1,9 +1,33 @@
 package mx.iteso.ut;
 
+/**
+ * Esta clase es queso Queso.
+ * @version: 24/02/2020
+ */
 public interface Queso {
-    public boolean isMelted();
-    public int getCurrentTemperature();
-    public int getMeltingTemperature();
-    public void setCurrentTemperature(int temp);
-    public void melt(boolean melted);
+    /**
+    * Metodo.
+    * @return melted.
+    */
+    boolean isMelted();
+    /**
+    * Metodo.
+    * @return current temp.
+    */
+    int getCurrentTemperature();
+    /**
+    * Metodo.
+    * @return melting temperature.
+    */
+    int getMeltingTemperature();
+    /**
+    * Metodo.
+    * @param temp temperatura.
+    */
+    void setCurrentTemperature(int temp);
+    /**
+    * Metodo.
+    * @param melted temperatura melted.
+    */
+    void melt(boolean melted);
 }

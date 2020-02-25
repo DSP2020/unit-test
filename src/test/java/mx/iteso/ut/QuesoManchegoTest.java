@@ -9,10 +9,6 @@ import org.junit.Test;
 import org.junit.Before;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author coque
- */
 public class QuesoManchegoTest {
     QuesoManchego quesoManchego;
     
